@@ -1,6 +1,6 @@
-var GHPATH = '/github-page-pwa';
-var APP_PREFIX = 'gppwa_';
-var VERSION = 'version_002';
+var GHPATH = '/EasyDHPWA';
+var APP_PREFIX = 'ezdh_';
+var VERSION = 'version_001';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
