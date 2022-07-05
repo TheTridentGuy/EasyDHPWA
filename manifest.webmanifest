@@ -9,7 +9,7 @@
   "display": "standalone", 
   "icons": [
       {
-        "src": "/EasyDHPWA/img/icon.png",
+        "src": "/EasyDHPWA/img/ezdh700.png",
         "type": "image/png",
         "sizes": "700x700"
       }
