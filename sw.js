@@ -1,6 +1,6 @@
 dhvar GHPATH = '/EasyDHPWA';
 var APP_PREFIX = 'ezdh_';
-var VERSION = 'version_001';
+var VERSION = 'version_002';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
