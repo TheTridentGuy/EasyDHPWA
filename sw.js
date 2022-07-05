@@ -1,12 +1,14 @@
-var GHPATH = '/EasyDHPWA';
+dhvar GHPATH = '/EasyDHPWA';
 var APP_PREFIX = 'ezdh_';
 var VERSION = 'version_001';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
-  `${GHPATH}/css/styles.css`,
-  `${GHPATH}/img/icon.png`,
-  `${GHPATH}/js/app.js`
+  `${GHPATH}/offline.html`,
+  `${GHPATH}/img/ezdh700.png`,
+  `${GHPATH}/ezdh182.png`,
+  `${GHPATH}/ezdh190.png`,
+  `${GHPATH}/CryptoJS/rollups/aes.js`
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION
