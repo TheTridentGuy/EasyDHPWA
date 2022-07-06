@@ -7,7 +7,7 @@ var URLS = [
   `${GHPATH}/offline.html`,
   `${GHPATH}/img/ezdh700.png`,
   `${GHPATH}/CryptoJS/rollups/aes.js`
-]
+];
 
 var CACHE_NAME = APP_PREFIX + VERSION
 self.addEventListener('fetch', function (e) {
