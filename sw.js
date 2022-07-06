@@ -1,13 +1,11 @@
 var GHPATH = '/EasyDHPWA';
-var APP_PREFIX = 'ezdh_';
-var VERSION = 'version_003';
+var APP_PREFIX = 'ezdhpwa_';
+var VERSION = 'version_004';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
   `${GHPATH}/offline.html`,
   `${GHPATH}/img/ezdh700.png`,
-  `${GHPATH}/ezdh182.png`,
-  `${GHPATH}/ezdh190.png`,
   `${GHPATH}/CryptoJS/rollups/aes.js`
 ]
 
@@ -28,27 +26,25 @@ self.addEventListener('fetch', function (e) {
 })
 
 self.addEventListener('install', function (e) {
-  console.log("Install...");
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       console.log('Installing cache : ' + CACHE_NAME);
-      return cache.addAll(URLS);
-    });
+      return cache.addAll(URLS)
+    })
   )
 })
 
 self.addEventListener('activate', function (e) {
-  console.log("Activate...");
   e.waitUntil(
     caches.keys().then(function (keyList) {
       var cacheWhitelist = keyList.filter(function (key) {
-        return key.indexOf(APP_PREFIX);
+        return key.indexOf(APP_PREFIX)
       })
       cacheWhitelist.push(CACHE_NAME);
       return Promise.all(keyList.map(function (key, i) {
         if (cacheWhitelist.indexOf(key) === -1) {
           console.log('Deleting cache : ' + keyList[i] );
-          return caches.delete(keyList[i]);
+          return caches.delete(keyList[i])
         }
       }))
     })
