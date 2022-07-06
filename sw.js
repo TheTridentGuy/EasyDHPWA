@@ -1,4 +1,4 @@
-dhvar GHPATH = '/EasyDHPWA';
+var GHPATH = '/EasyDHPWA';
 var APP_PREFIX = 'ezdh_';
 var VERSION = 'version_003';
 var URLS = [    
