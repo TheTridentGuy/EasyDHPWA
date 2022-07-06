@@ -28,6 +28,7 @@ self.addEventListener('fetch', function (e) {
 })
 
 self.addEventListener('install', function (e) {
+  console.log("Install...");
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       console.log('Installing cache : ' + CACHE_NAME);
@@ -37,6 +38,7 @@ self.addEventListener('install', function (e) {
 })
 
 self.addEventListener('activate', function (e) {
+  console.log("Activate...");
   e.waitUntil(
     caches.keys().then(function (keyList) {
       var cacheWhitelist = keyList.filter(function (key) {
